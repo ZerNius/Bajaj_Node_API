@@ -31,7 +31,7 @@ app.post('/bfhl', (req, res) => {
     const alphaArray = requestData.filter((data)=>alphabeticStringRegex.test(data))
 
     //Finding highest alphabet
-    const highestAlphabet = aplhabetData.reduce((highest, current) => (current > highest ? current : highest), 'A');
+    const highestAlphabet = alphaArray.reduce((highest, current) => (current > highest ? current : highest), 'A');
     const highest_alphabet = [highestAlphabet];
 
     const response = {

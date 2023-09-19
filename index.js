@@ -1,7 +1,5 @@
 import express from "express";
 import bodyParser from "body-parser";
-import { dirname } from "path";
-import { fileURLToPath } from "url";
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -40,7 +38,7 @@ app.post('/bfhl', (req, res) => {
         "email": "udit.shrivastava2020@vitbhopal.ac.in",
         "roll_number": "20BCG10109",
         "numbers": numberArray,
-        "alphabet": alphaArray,
+        "alphabets": alphaArray,
         "highest_alphabet": highest_alphabet,
       };
 
